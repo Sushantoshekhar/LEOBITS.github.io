@@ -1,0 +1,849 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+:root{
+    --yellow:#f9d806;
+    --light-yellow:#ffee80;
+    --black:#130f40;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.1rem solid rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    padding:.8rem 3rem;
+    background:var(--light-yellow);
+    color:var(--black);
+    cursor: pointer;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.btn:hover{
+    background:var(--yellow);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top:0; left:0; right:0;
+    padding:22px 55px;
+    z-index: 999;
+    background: #fff;
+}
+/* -------------------------LOGO-------------------- */
+
+.header img{
+    width: 55px;
+}
+
+/* --------------------------- navigation  bar styling(for desktop-screen) starts----------------- */
+.navbar{
+
+    flex: 1;
+    text-align: right;
+    
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.navbar ul li a{
+    color: rgb(197, 120, 5);
+    text-decoration: none;
+    font-size: 15px;
+    text-align: right;
+}
+
+.navbar ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width:100%;
+}
+
+
+
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin: 0 1rem;
+    color: var(--black);
+
+}
+
+.header .navbar a:hover{
+    color:var(--yellow)
+}
+
+.header .btn{
+    margin-top: 0;
+
+}
+
+.header #login-btn i{
+    font-size: 2.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+    display: none;
+
+}
+
+#menu-btn{
+    font-size: 2.5rem;
+    color:var(--light-color);
+    cursor: pointer;
+    display: none;
+
+}
+
+
+.header.active{
+    box-shadow: var(--box-shadow);
+    padding: 2rem 9%;
+}
+
+
+/* --------------------------- navigation  bar styling(for desktop-screen) ends----------------- */
+
+
+/* <!-- ------------------------- HELLO BIT SECTION STARTS----------------------- --> */
+.Hello_bit{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    flex-wrap: wrap;
+    background-color: black;
+
+}
+
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+    font-family: cursive;
+    flex-wrap: wrap;
+    
+    
+}
+
+.text-box p{
+
+    padding-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+
+ .hero-btn {
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: tomato;
+    border: 1px solid thistle;
+    border-radius: 4px;
+    
+    margin: 10px 10px;
+    font-family: cursive;
+}
+
+.hero-btn:hover{
+
+    background-color: tomato;
+
+    color: rgb(33, 0, 153);
+    border-radius:100px;
+    transition: 1.5s;
+
+}
+
+
+
+/*----------------------- particles-js styling -----------------------------------------*/
+#particles-js{
+    position: relative;
+    z-index: 1;
+    
+}
+canvas.particles-js-canvas-el{
+
+
+top: 0;
+left: 0;
+z-index: 1;
+width: 100%;
+height: 100%;
+
+}
+/* <!-- ------------------------- HELLO BIT SECTION ENDS----------------------- --> */
+
+/* <!------------------------------- VIDEO SECTION ONE AND TWO STARTS -----------------------------> */
+
+.video-area1 {
+    background: #ffffff url(../img/thumbnail-01.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+}
+
+
+.video-area2 {
+    background: #ffffff url(../img/leohalflogo.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    
+    
+}
+
+
+
+
+.container-video{
+    padding-left: 35%;
+    
+
+}
+
+
+.play {
+  background: #ffffff url(../img/play.png) no-repeat 50% 50%;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-top: 70px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 0px 20px #ffffff;
+  -webkit-box-shadow: 0px 0px 0px 20px #ffffff;
+  -moz-box-shadow: 0px 0px 0px 20px #ffffff;
+  -o-box-shadow: 0px 0px 0px 20px #ffffff;
+  transition: all 0.4s ease-in;
+  -webkit-transition: all 0.4s ease-in;
+  -moz-transition: all 0.4s ease-in;
+  -o-transition: all 0.4s ease-in;
+  -ms-transition: all 0.4s ease-in;
+
+}
+
+.play:hover {
+  box-shadow: 0px 0px 15px 20px #ffffff;
+  -webkit-box-shadow: 0px 0px 15px 20px #ffffff;
+  -moz-box-shadow: 0px 0px 15px 20px #ffffff;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 54.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  margin-top: -130px;
+  display: none;
+} 
+
+  
+
+
+
+
+/* <!------------------------------- VIDEO SECTION ONE AND TWO ENDS -----------------------------> */
+
+
+/* <!------------------------------- LEO SECTION STARTS -----------------------------> */
+
+.course{
+    width: 100%;
+    margin: auto;
+    
+    padding-top: 4px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(23, 41, 112, 0.7);    
+
+}
+h1 {
+    font-size: 58px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    
+
+}
+
+h4{
+
+    flex-wrap: wrap;
+    font-size: 22px;
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 52px 0;
+
+
+}
+.container .card{
+    position: relative;
+    min-width: 377px;
+    height: 550px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255,255,255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin: 30px;
+
+}
+
+
+.container .card .box{ 
+    position: absolute;
+    top: -29px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #fabc10ed;
+    border: 2px solid #6f19b1;
+    border-radius: 15px;
+    box-shadow:0 20px 50px rgb(255 255 255);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.container .card .box::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.container .card .box:hover{
+    transform: translateY(-40px);
+    box-shadow: 0 40px 70px rgba(0, 0, 0, 0.5);
+}
+.container .card .box .content{
+    padding:20px;
+    text-align: center;
+}
+.container .card .box .content h2{
+    position: absolute;
+    top: -35px;
+    right: 29px;
+    font-size: 12em;
+    color: rgba(253, 253, 253, 0.089);
+
+
+}
+.container .card .box .content h3{
+    font-size: 1.8em;
+    color: rgba(12, 12, 212, 0.781);
+    z-index:1;
+    transition: 0.5s;
+
+
+}
+
+.container .card .box .content p{
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(6, 6, 100);
+    z-index:1;
+    transition: 0.5s;
+
+}
+.container .card .box .content a{
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px ;
+    background: #000;
+    margin-top: 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 400;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+
+
+
+/* <!------------------------------- LEO SECTION ENDS--------------------------------> */
+
+/* <!------------------------------- CALL TO ACTION STARTS -----------------------------> */
+.cta{
+    margin: 10px auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding:100px 0;
+    flex-wrap: wrap;
+}
+.cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+
+}
+
+@media(max-width: 700px){
+    .cta h1{
+        font-size: 24px;
+    }
+}
+
+/* <!---------------------------------CALL TO ACTION ENDS -----------------------------> */
+/* <!---------------------------------FOOTER SECTION STARTS -----------------------------> */
+
+footer{
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    margin-bottom:25px;
+    font-weight: 600;
+    flex-wrap: wrap;
+
+}
+.address h5{
+    font-size: 15px;
+}
+
+
+.icons {
+    color:#f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 22px;
+}
+/* <!---------------------------------FOOTER SECTION ENDS -----------------------------> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queres */
+
+@media(max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 2rem;
+    }
+
+    .header.active{
+       
+        padding: 2rem ;
+    }
+    
+
+}
+
+@media(max-width:768px){
+
+    #menu-btn{
+        display: block;
+        
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+
+    .header #login-btn i{
+        display: block;
+
+    }
+
+    .header #login-btn .btn{
+        display: none;
+
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%; left: 0;right: 0;
+        background: #fff;
+        border-top: var(--border);
+        clip-path:polygon(0 0,100% 0, 100% 0, 0 0);
+        background-color: blue;
+       
+        
+    }
+
+    .header .navbar.active{
+        clip-path:polygon(0 0,100% 0, 100% 100%, 0% 100%);
+    }
+
+
+
+    .header .navbar a{
+        display: block;
+        margin: 2rem;
+        font-size: 2rem;
+        color: yellow;
+
+    }
+
+   
+
+    .Hello_bit{
+        background-position: center;
+        background-size: cover;
+
+    }
+
+    #particles-js{
+        position: relative;
+        z-index: 1;
+        
+    }
+    canvas.particles-js-canvas-el{
+    
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    
+    }
+
+   
+    h1 {
+        font-size: 55px;
+        font-weight: 600;
+        flex-wrap: wrap;
+        
+    
+    }
+    
+    h4{
+    
+        flex-wrap: wrap;
+        font-size: 25px;
+    }
+}
+
+@media(max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+     
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    
+
+}
+
+h4{
+
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+
+
+
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -41px;
+    right: 21px;
+    font-size: 15em;
+    color: rgba(253, 253, 253, 0.089);
+
+
+}
+.container .card .box .content h3{
+    font-size: 3.8em;
+    color: rgba(12, 12, 212, 0.781);
+    z-index:1;
+    transition: 0.5s;
+
+
+}
+
+.container .card .box .content p{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(6, 6, 100);
+    z-index:1;
+    transition: 0.5s;
+
+}
+
+
+@media(max-width:330px){
+
+    html{
+        font-size: 50%;
+    }
+/* <!------------------------------- LEO SECTION STARTS -----------------------------> */
+ .course{
+    width: 100%;
+    margin: auto;
+    padding-top: 4px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(23, 41, 112, 0.7);    
+
+}
+h1 {
+    font-size: 45px;
+    font-weight: 600;
+    flex-wrap: wrap;
+    
+
+}
+
+h4{
+
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+
+
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width:150px ;
+    margin: 50px 0;
+    
+
+
+}
+
+.container .card{
+    position: relative;
+    min-width: 377px;
+    height: 550px;
+    box-shadow: inset 5px 5px 5px rgba(0,0,0,0.2),
+                inset -5px -5px 15px rgba(255,255,255,0.1),
+                5px 5px 15px rgba(0,0,0,0.3),
+                -5px -5px 15px rgba(255,255,255,0.1);
+    border-radius: 15px;
+    margin: 30px;
+    left:-2px;
+    right: 30px;
+    top: -20px;
+    bottom: -100px;
+
+}
+
+
+.container .card .box{ 
+    position: absolute;
+    top: -25px;
+    left: 97px;
+    right: -9px;
+    bottom: -7px;
+    background: #fabc10ed;
+    border: 2px solid #6f19b1;
+    border-radius: 15px;
+    box-shadow:0 20px 50px rgb(255 255 255);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+} 
+
+.container .card .box .content h2{
+    position: absolute;
+    top: -39px;
+    right: 22px;
+    font-size: 15em;
+    color: rgba(253, 253, 253, 0.089);
+
+
+}
+.container .card .box .content h3{
+    font-size: 3em;
+    color: rgba(12, 12, 212, 0.781);
+    z-index:1;
+    transition: 0.5s;
+
+
+}
+
+.container .card .box .content p{
+    font-size: 15px;
+    font-weight: 300;
+    color: rgb(6, 6, 100);
+    z-index:1;
+    transition: 0.5s;
+
+}
+
+
+/* <!------------------------------- LEO SECTION endsS -----------------------------> */
+
+
+}
+
+
+
+
+
+
+
